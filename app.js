@@ -13,7 +13,6 @@ const corsOptions = {
 
 app.use(express.json());
 app.use(cors(corsOptions));
-console.log(process.env.User);
 
 const transporter = nodemailer.createTransport({
   host: process.env.Host,
